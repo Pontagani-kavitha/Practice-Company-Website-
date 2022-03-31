@@ -1,0 +1,283 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+
+html{
+scroll-behavior: smooth;
+}
+
+/*navbar*/
+
+.navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+.nav-item{
+  margin-left: 30px;
+}
+nav a{
+text-decoration: none;
+padding: 8px 25px;
+transition: all .5s ease;
+color: #EAB543;
+
+}
+nav a:hover{
+color: #e63313;
+transform:scale(1.04);
+font-size: 25px;
+}
+.navbar-brand img{
+width: 70px;
+height: 70px;}
+
+span{
+font-size: 20px;
+color: #EAB543;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/*Home section*/
+
+#home{
+display: flex;
+flex-direction: column;
+height: 760px;
+justify-content: center;
+align-items: center;
+}
+#home::before{
+content:"";
+position: absolute;
+top: 0;
+right: 0;
+background: url('images/backgroundimage1.jpg') no-repeat center center/cover;
+height: 850px;
+width: 100%;
+z-index: -1;
+}
+
+
+.main{
+display: flex;
+align-items: center;
+flex-direction: column;
+position: absolute;
+top: 50%;
+font-size: 2rem;
+color: white;
+}
+.main p{
+text-align: center;
+align-items: center;}
+
+
+.headingabout{
+text-align: center;
+margin-bottom: 70px ;
+margin-top: 70px;
+color: #EAB543;
+}
+
+#about .underline{
+  border:solid #EAB543;
+  width: 400px;
+margin-left: 550px;
+margin-bottom: 20px;
+}
+
+.headingservices{
+text-align: center;
+margin-bottom: 30px ;
+margin-top: 70px;
+color: #EAB543;
+}
+
+#services .underline{
+  border: solid #EAB543;
+  width: 400px;
+margin-left: 550px;
+}
+
+.headingcontact{
+text-align: center;
+margin-bottom: 10px ;
+color: #EAB543;
+}
+
+#contact .underline{
+  border: solid #EAB543;
+  width: 400px;
+margin-left: 350px;
+}
+
+/* About Strart*/
+
+
+#about{
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+
+#intro{
+display: flex;
+flex-direction: column;
+text-align: justify;
+padding: 35px;
+border: 5px solid brown;
+border-radius: 50px;
+background-color: #000;
+}
+
+
+
+#intro p{
+font-size: 20px;
+margin-bottom: 20px;
+margin-right: 10px;
+color: #dcdde1;}
+
+#about .btn{
+width: 30%;
+padding: 15px 22px;
+background: #f06147;
+border-radius: 5px;
+margin-top: 10px;
+}
+#about .btn a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+ #about .btn:hover{
+  transform:scale(1.04);
+ }
+
+/*Services section*/
+
+
+#services{
+display: flex;
+flex-direction: column;
+padding: 20px;
+margin-bottom:100px;
+}
+
+.row1{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+.box{
+display: flex;
+flex-direction: column;
+width: 350px;
+height: 400px;
+margin: 10px;
+align-items: center;
+text-align: justify;
+padding: 10px;
+border-radius: 15px;
+background: linear-gradient(to top,#f06147 50%, white 50%);
+background-size: 100% 200%;
+transition: all 0.8s;
+box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.66);
+}
+.box:hover{
+background-position: left bottom;
+color: white;
+border: none;
+box-shadow: 0 0 20px rgb(255,45,45);
+}
+.box img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.box img:hover{
+transform: scale(0.9) ;
+}
+
+
+.box p{
+padding-top: 60px;
+font-size: 20px;
+}
+
+
+/*contact section*/
+
+
+#contact{
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+color: white;
+padding-top: 40px;
+padding-bottom: 50px;
+background-color: black;
+}
+
+#send{
+  padding: 10px;
+  width: 20%;
+  border: none;
+  outline: none;
+  background-color: #f06147;
+  color: white;
+}
+
+
+#send:hover{
+cursor: pointer;
+box-shadow: 0 0 10px white;
+transform: scale(1.04);
+}
+
+
+/* Footer */
+#footer {
+  background: #222f3e;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  }
+
+  #footer h4{
+    margin-top: 12px;
+    font-size: 20px;
+      }
+
+  #footer a{
+    font-size: 25px;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+
+   #footer a:hover{
+    font-size: 30px;
+    color: #EAB543;
+    }
+
+    #footer span{
+      color: #EAB543;
+      font-size: 18px;
+      text-transform: none;
+    }
+  
